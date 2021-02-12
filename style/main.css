@@ -42,17 +42,15 @@ body {
   background-color: #4F6D7A;
   float: left;
 }
-.review-generator .button {
+.review-generator button {
   margin: 10px;
   padding: 10px 20px;
   border-radius: 25px;
   font-family: Arial, Helvetica, sans-serif;
+  border: none;
   cursor: pointer;
   background-color: #1E152A;
   color: #EFF6E0;
-}
-.review-generator .button :hover {
-  color: #AEC3B0;
 }
 
 /*# sourceMappingURL=main.css.map */

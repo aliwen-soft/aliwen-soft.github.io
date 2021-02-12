@@ -44,8 +44,9 @@ body {
   background-color: $grey-blue;
   float: left;
 
-  .button{
+  button{
     @include normal-box;
+    border: none;
     cursor: pointer;
     background-color: $dark-purple;
     color: $beige;
