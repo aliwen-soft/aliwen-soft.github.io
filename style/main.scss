@@ -5,9 +5,10 @@ body {
 }
 
 @mixin normal-box {
-  margin: 10px auto;
+  margin: 10px;
   padding: 10px 20px;
   border-radius: 25px;
+  font-family: $main-font;
 }
 
 .main-page{
@@ -23,7 +24,6 @@ body {
   border: 3px solid $dark-purple;
 
   h1{
-    font-family: $main-font;
     color: $dark-purple;
   }
 }
@@ -32,8 +32,22 @@ body {
   @include normal-box;
   float: left;
   background-color: $pink;
-  width: max-content;
+  width: 30%;
   color: $beige;
-  font-family: $main-font;
+
   text-align: left;
+}
+
+.review-generator{
+  @include normal-box;
+  max-width: 50%;
+  background-color: $grey-blue;
+  float: left;
+
+  .button{
+    @include normal-box;
+    cursor: pointer;
+    background-color: $dark-purple;
+    color: $beige;
+  }
 }

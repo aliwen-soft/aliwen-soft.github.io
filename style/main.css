@@ -8,29 +8,51 @@ body {
 }
 
 .header {
-  margin: 10px auto;
+  margin: 10px;
   padding: 10px 20px;
   border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   background-color: #AEC3B0;
   width: 100%;
   border: 3px solid #1E152A;
 }
 .header h1 {
-  font-family: Arial, Helvetica, sans-serif;
   color: #1E152A;
 }
 
 .fun-facts {
-  margin: 10px auto;
+  margin: 10px;
   padding: 10px 20px;
   border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   float: left;
   background-color: #DB504A;
-  width: max-content;
+  width: 30%;
   color: #EFF6E0;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+}
+
+.review-generator {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 50%;
+  background-color: #4F6D7A;
+  float: left;
+}
+.review-generator .button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  background-color: #1E152A;
+  color: #EFF6E0;
+}
+.review-generator .button :hover {
+  color: #AEC3B0;
 }
 
 /*# sourceMappingURL=main.css.map */
