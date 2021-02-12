@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html>
+
+<link rel="stylesheet" type="text/css" href="style/main.css">
+
 <head>
-    <title>Page Title</title>
+    <script>
+        function newComment() {
+            var comments =[
+                "Goats cheese is overrated",
+                "Hallumi is somehow underated",
+                "Invisible Women is a great book and should be compulsery reading before anyone is allowed to make an important decision",
+                "Coffee is very good"
+            ]
+            var comment = comments[Math.floor(Math.random() * comments.length)];
+            document.getElementById("comment").innerHTML = comment;
+        }
+    </script>
+
+    <title>Alice's Amazing website</title>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<div class="main-page">
+
+    <div class = "header">
+        <h1>Alice's lovely website</h1>
+    </div>
+
+    <div class="fun-facts">
+        <h3>Some fun facts about Alice</h3>
+        <ul>
+            <li>Allergic to cats</li>
+            <li>Likes bright colours</li>
+            <li>Does not like spelling</li>
+        </ul>
+    </div>
+
+    <div class="review-generator">
+        <h3>Random opinion Generator</h3>
+        <p id = comment></p>
+        <button onclick="newComment()">pick a new opinion alice holds</button>
+    </div>
+
+
+</div>
+
 
 </body>
 </html> 
