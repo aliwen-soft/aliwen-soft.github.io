@@ -1,5 +1,36 @@
 body {
+  background-color: #EFF6E0;
+}
+
+.main-page {
+  width: 70%;
+  margin: auto;
+}
+
+.header {
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-align: center;
+  background-color: #AEC3B0;
+  width: 100%;
+  border: 3px solid #1E152A;
+}
+.header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1E152A;
+}
+
+.fun-facts {
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 25px;
+  float: left;
   background-color: #DB504A;
+  width: max-content;
+  color: #EFF6E0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
 }
 
 /*# sourceMappingURL=main.css.map */

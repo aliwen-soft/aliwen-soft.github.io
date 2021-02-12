@@ -1,3 +1,39 @@
-@import "colours";
+@import "colours_font";
 
-body {background-color: $beige;}
+body {
+  background-color: $beige;
+}
+
+@mixin normal-box {
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+.main-page{
+  width: 70%;
+  margin: auto;
+}
+
+.header{
+  @include normal-box;
+  text-align: center;
+  background-color: $blue;
+  width: 100%;
+  border: 3px solid $dark-purple;
+
+  h1{
+    font-family: $main-font;
+    color: $dark-purple;
+  }
+}
+
+.fun-facts{
+  @include normal-box;
+  float: left;
+  background-color: $pink;
+  width: max-content;
+  color: $beige;
+  font-family: $main-font;
+  text-align: left;
+}
