@@ -52,3 +52,32 @@ body {
     color: $beige;
   }
 }
+
+.colour-change{
+  @include normal-box;
+  width: 100%;
+  float: left;
+  color: $beige;
+
+  background-image: linear-gradient(120deg, $pink, $grey-blue, $dark-purple, $grey-blue, $pink);
+  background-size: 300%;
+  background-position: left;
+  animation: gradient-animation 5s infinite alternate;
+  
+}
+
+@keyframes gradient-animation {
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+.bouncy-circle{
+  background-color: $pink;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
