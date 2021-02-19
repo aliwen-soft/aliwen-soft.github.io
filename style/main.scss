@@ -75,9 +75,84 @@ body {
   }
 }
 
-.bouncy-circle{
+.bouncy-box{
+  @include normal-box;
+  width: 200px;
+  height: 200px;
+  border: 3px solid $dark-purple;
+  float: left;
+}
+
+@mixin circle {
   background-color: $pink;
   width: 80px;
   height: 80px;
-  border-radius: 20px;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+
+.bouncy-circle{
+  @include circle;
+  top: 0px;
+  left: 60px;
+  animation: bounce 1s infinite alternate cubic-bezier(0.5, 0.05, 1, 0.5);
+
+  transition: background-color 1s;
+
+  &:hover{background-color: $grey-blue;}
+}
+
+.bouncy-circle-side{
+  @include circle;
+  top: 0px;
+  left: 10px;
+  animation: bounce-side 2s infinite alternate cubic-bezier(0,0.50,1,0.50);
+  transition: background-color 1s;
+  &:hover{ background-color: $grey-blue; }
+}
+.bouncy-circle-swing{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-origin: 50% 0%;
+
+  animation: bounce-swing 1s infinite alternate cubic-bezier(0,0.50,1,0.50);
+
+}
+
+.ball{
+  @include circle;
+  left: 60px;
+  transition: background-color 1s;
+  &:hover{background-color: $grey-blue;}
+}
+.string{
+  width: 2px;
+  height: 100px;
+  background: $dark-purple;
+  border-radius: 5px;
+  position: relative;
+  left: 99px;
+}
+
+
+@keyframes bounce-side {
+  0% {top: 130px; left: 10px;}
+  50% {top: 0px; left:60px;}
+  100%{top:130px; left:120px}
+}
+
+@keyframes bounce-swing {
+  0% {
+    transform: rotate(-28deg);
+  }
+  100% {
+    transform: rotate(28deg);
+  }
+}
+@keyframes bounce {
+  0% {top: 0px;}
+  100% {top: 130px;}
 }

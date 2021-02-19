@@ -75,11 +75,106 @@ body {
     background-position: right;
   }
 }
+.bouncy-box {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  height: 200px;
+  border: 3px solid #1E152A;
+  float: left;
+}
+
 .bouncy-circle {
   background-color: #DB504A;
   width: 80px;
   height: 80px;
-  border-radius: 20px;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 60px;
+  animation: bounce 1s infinite alternate cubic-bezier(0.5, 0.05, 1, 0.5);
+  transition: background-color 1s;
+}
+.bouncy-circle:hover {
+  background-color: #4F6D7A;
+}
+
+.bouncy-circle-side {
+  background-color: #DB504A;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  top: 0px;
+  left: 10px;
+  animation: bounce-side 2s infinite alternate cubic-bezier(0, 0.5, 1, 0.5);
+  transition: background-color 1s;
+}
+.bouncy-circle-side:hover {
+  background-color: #4F6D7A;
+}
+
+.bouncy-circle-swing {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-origin: 50% 0%;
+  animation: bounce-swing 1s infinite alternate cubic-bezier(0, 0.5, 1, 0.5);
+}
+
+.ball {
+  background-color: #DB504A;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  left: 60px;
+  transition: background-color 1s;
+}
+.ball:hover {
+  background-color: #4F6D7A;
+}
+
+.string {
+  width: 2px;
+  height: 100px;
+  background: #1E152A;
+  border-radius: 5px;
+  position: relative;
+  left: 99px;
+}
+
+@keyframes bounce-side {
+  0% {
+    top: 130px;
+    left: 10px;
+  }
+  50% {
+    top: 0px;
+    left: 60px;
+  }
+  100% {
+    top: 130px;
+    left: 120px;
+  }
+}
+@keyframes bounce-swing {
+  0% {
+    transform: rotate(-28deg);
+  }
+  100% {
+    transform: rotate(28deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 130px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
