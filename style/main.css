@@ -95,7 +95,7 @@ body {
   top: 0px;
   left: 60px;
   animation: bounce 1s infinite alternate cubic-bezier(0.5, 0.05, 1, 0.5);
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 }
 .bouncy-circle:hover {
   background-color: #4F6D7A;
@@ -121,7 +121,7 @@ body {
   width: 200px;
   height: 200px;
   transform-origin: 50% 0%;
-  animation: bounce-swing 1s infinite alternate cubic-bezier(0, 0.5, 1, 0.5);
+  animation: bounce-swing 1s infinite alternate cubic-bezier(0, 0.5, 0, 0.5);
 }
 
 .ball {

@@ -99,7 +99,7 @@ body {
   left: 60px;
   animation: bounce 1s infinite alternate cubic-bezier(0.5, 0.05, 1, 0.5);
 
-  transition: background-color 1s;
+  transition: background-color 0.5s;
 
   &:hover{background-color: $grey-blue;}
 }
@@ -118,7 +118,7 @@ body {
   height: 200px;
   transform-origin: 50% 0%;
 
-  animation: bounce-swing 1s infinite alternate cubic-bezier(0,0.50,1,0.50);
+  animation: bounce-swing 1s infinite alternate cubic-bezier(0,0.5,0,0.5);
 
 }
 
