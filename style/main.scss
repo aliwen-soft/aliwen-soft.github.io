@@ -46,6 +46,7 @@ body {
 
   button{
     @include normal-box;
+    border-radius: 0px;
     border: none;
     cursor: pointer;
     background-color: $dark-purple;

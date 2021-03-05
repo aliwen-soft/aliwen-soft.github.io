@@ -4,18 +4,7 @@
 <link rel="stylesheet" type="text/css" href="style/main.css">
 
 <head>
-    <script>
-        function newComment() {
-            var comments =[
-                "Goats cheese is overrated",
-                "Hallumi is somehow underated",
-                "Invisible Women is a great book and should be compulsery reading before anyone is allowed to make an important decision",
-                "Coffee is very good"
-            ]
-            var comment = comments[Math.floor(Math.random() * comments.length)];
-            document.getElementById("comment").innerHTML = comment;
-        }
-    </script>
+    <script src="main.js"></script>
 
     <title>Alice's Amazing website</title>
 </head>
@@ -41,6 +30,8 @@
         <p id = comment></p>
         <button onclick="newComment()">pick a new opinion alice holds</button>
     </div>
+
+    <button onclick="loadGify()">load</button>
 
     <div class="colour-change">
         <div>pretty colour changing box</div>
